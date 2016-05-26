@@ -1,0 +1,416 @@
+/*
+Theme Name: 	Theme for Emerald 333
+Theme URI: 		http://www.htmlfivedev.com
+Author: 		Ahmed Rahat Musawir
+Author URI: 	https://www.linkedin.com/in/ahmedmusawir
+Description:	Custom Built for Emerald 333 Project
+Template:		betheme
+Version: 		1.6
+*/
+
+/* LOADING STUFF
+-------------------------------------------------------------- */
+
+/**
+ *
+ * Colors
+ *
+ */
+$roy-green: #4cd697;
+$serene-green: #3c948b;
+$signature-green: #239963;
+// $shaw-purple: #ec008c;
+// $cheryl-purple: #B2398B;
+// $cheryl-purple-dark: #7c0552;
+// $cheryl-teal: #179a9b;
+// $cheryl-teal: #28A0A0;
+// $cheryl-gray: #545455;
+
+/**
+ *
+ * File Imports
+ *
+ */
+
+@import "bourbon/bourbon";
+@import "bootstrap-variables";
+
+/**
+ *
+ * Google Fonts
+ *
+ */
+// @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
+// @import url(https://fonts.googleapis.com/css?family=Bevan);
+// @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
+// @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+// @import url(https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
+// @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+// @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic);
+// @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700italic,400italic,700,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+// Import custom Bootstrap variables
+// @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+// @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css);
+
+
+/* Theme customization starts here
+-------------------------------------------------------------- */
+
+/**
+ *
+ * ADmin Bar
+ *
+ */
+// .admin-bar .navbar-fixed-top {
+//     margin-top: 30px;
+// }
+// @media (max-width: 800px) {
+//     .admin-bar .navbar-fixed-top {
+//         margin-top: 46px;
+//     }
+// }
+body {
+	// display: none;
+}
+
+#Top_bar {
+ 	.top_bar_left, .top_bar_right {
+ 	background: url("/wp-content/uploads/2016/04/sidebar-menu-bg-2.jpg");
+	 	// background: url("/wp-content/uploads/2016/04/header-transparent-bg.png") !important;
+
+ 	}
+
+}
+
+/**
+ *
+ * top header with same bg image which I DON'T want
+ *
+ */
+
+.home {
+	#Header, #Subheader {
+		display: none;
+	}
+}
+
+/**
+ *
+ * The Side Menu Panel
+ *
+ */
+ #Header_creative {
+
+ 	background: url("/wp-content/uploads/2016/04/sidebar-menu-bg-2.jpg");
+ }
+
+ /**
+  *
+  * Side Menu Widget Block
+  *
+  */
+.responsive-menu-toggle {
+
+	.icon-menu {
+		color: $signature-green;
+	}
+
+	@media (min-width: 768px) {
+
+		.icon-menu {
+			color: white;
+			padding: 1rem;
+			background-color: $signature-green;
+			border-radius: 50% !important;
+			// border: 1px solid red;
+		}
+	}
+
+}
+.side-menu-widget-block {
+
+	display: none;
+ 	padding-top: 2rem;
+ 	padding-right: 1rem;
+ 	padding-left: 1rem;
+
+ 	text-align: center;
+ 	color: white;
+
+ 	.widget-title {
+ 		color: white;
+ 	}
+
+ 	@media  ( max-width: 1239px ) {
+ 		// display: none;
+		padding-bottom: 2rem;
+		// margin-bottom: 1rem;
+ 	}
+ }
+
+ #menu {
+
+ 	background-color: gray !important;
+
+ 	span {
+ 		color: white !important;
+ 	}
+ }
+
+ #Action_bar {
+
+ 	.social {
+
+ 		li {
+ 			a {
+ 				color: white !important;
+
+ 			}
+ 		}
+ 	}
+ }
+
+/**
+ *
+ * Top Video Block on the Front Page
+ *
+ */
+
+#front-page-video-block {
+
+
+	.front-page-header-block {
+		// border: 2px solid red;
+		min-height: 1080px;
+
+	@media (min-width: 768px) and (max-width: 1239px) {
+
+		padding-top: 10rem;
+	}
+
+		padding-top: 10rem;
+		padding-bottom: 8rem;
+		// background-color: rgba( darken( $gray, 25% ), .7);
+		background-color: rgba( darken( $steel, 25% ), .7);
+
+		h1 {
+			padding-top: 3rem;
+			font-family: 'Playfair Display', serif;
+			color: $gray-lighter;
+			font-size: 3.5rem;
+			line-height: 3.5rem;
+			font-style: italic;
+			font-weight: 700;
+
+			@media ( max-width: 650px ) {
+				font-size: 2.5rem;
+			}
+		}
+
+		div.call-now {
+
+			// width: 80%;
+			margin: 0 auto;
+
+			h2 {
+				// border: 3px solid white;
+				font-family: 'Courgette', cursive;
+				padding: 1rem;				
+				padding-top: 10rem;
+				color: lighten( gray, 10% );
+				font-size: 2.5rem;
+				line-height: 2.5rem;
+			}		
+		}
+
+		.logo-img {
+			// border: 2px solid red;
+
+			img {
+				// border: 2px solid yellow;
+				background-color: rgba( darken( white, 0% ), .7);
+
+			}
+		}
+	}
+
+
+}
+
+/**
+ *
+ * Section 2 
+ *
+ */
+
+#section2 {
+
+	color: gray;
+
+	h1 {
+		font-family: 'Courgette', cursive;
+		color: gray;
+	}
+}
+
+/**
+ *
+ * Section 3
+ *
+ */
+
+#section3 {
+
+	// border: 1rem solid red;
+
+	h2 {
+		font-family: 'Courgette', cursive;
+		color: gray;
+	}
+
+	h4 {
+		font-family: 'Courgette', cursive;
+		color: gray;
+		font-size: 1.5rem;
+	}
+
+}
+
+/**
+ *
+ * Section 4
+ *
+ */
+#section4 {
+
+	.section4-wrapper {
+
+		background-color: rgba( gray, .7 );
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}	
+
+	h1 {
+		font-family: 'Courgette', cursive;
+		color: lighten( gray, 25% );
+		font-size: 3.5rem;	
+		vertical-align: center;
+		text-align: center;	
+		padding: 3rem;
+		line-height: 3.5rem;
+	}
+}
+/**
+ *
+ * The Front Page Offer Slider which is auto
+ *
+ */
+
+
+.offer_thumb {
+
+	background: url("/wp-content/uploads/2016/04/header-transparent-bg.png");
+	min-height: 500px !important;
+
+	.offer_thumb_ul {
+
+		.desc_wrapper {
+
+			padding-top: 6rem !important;
+
+			@media screen and ( min-width: 1500px ) {
+				// border: 1px solid red;
+				padding-top: 5rem !important;
+
+				h5 {
+					font-size: 1.5rem !important;
+					line-height: 1.5rem !important;
+					font-weight: 300 !important;
+					color: gray;
+				}
+			}
+		}
+	}	
+
+}
+
+
+/**
+ *
+ * Page Details
+ *
+ */
+
+ #pager-header-block {
+
+ 	min-height: 600px;
+
+	.page-header {
+
+		@media (min-width: 768px) and (max-width: 1239px) {
+
+			padding-top: 10rem;
+		}
+
+		background-color: rgba( black, .5);
+		min-height: 600px;
+		width: 100%;
+
+		h1 {
+			color: white !important;
+		}
+		.slogan {
+			padding-top: 8rem;
+			color: white !important;
+		}
+
+	}
+
+ }
+
+
+
+/**
+ *
+ * Footer Widget
+ *
+ */
+#text-2 {
+	.textwidget {
+		img {
+			width: 100%;
+			// border: 1rem solid red;
+		}
+	}
+}
+
+#menu-footer-menu {
+	background-color: lighten( black, 20% );
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

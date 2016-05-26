@@ -1,0 +1,219 @@
+/*
+Theme Name: 	Theme for Emerald 333
+Theme URI: 		http://www.htmlfivedev.com
+Author: 		Ahmed Rahat Musawir
+Author URI: 	https://www.linkedin.com/in/ahmedmusawir
+Description:	Custom Built for Emerald 333 Project
+Template:		betheme
+Version: 		1.6
+*/
+/* LOADING STUFF
+-------------------------------------------------------------- */
+/**
+ *
+ * Colors
+ *
+ */
+/**
+ *
+ * File Imports
+ *
+ */
+/**
+ *
+ * Google Fonts
+ *
+ */
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+/* Theme customization starts here
+-------------------------------------------------------------- */
+/**
+ *
+ * ADmin Bar
+ *
+ */
+#Top_bar .top_bar_left, #Top_bar .top_bar_right {
+  background: url("/wp-content/uploads/2016/04/sidebar-menu-bg-2.jpg"); }
+
+/**
+ *
+ * top header with same bg image which I DON'T want
+ *
+ */
+.home #Header, .home #Subheader {
+  display: none; }
+
+/**
+ *
+ * The Side Menu Panel
+ *
+ */
+#Header_creative {
+  background: url("/wp-content/uploads/2016/04/sidebar-menu-bg-2.jpg"); }
+
+/**
+ *
+ * Side Menu Widget Block
+ *
+ */
+.responsive-menu-toggle .icon-menu {
+  color: #239963; }
+@media (min-width: 768px) {
+  .responsive-menu-toggle .icon-menu {
+    color: white;
+    padding: 1rem;
+    background-color: #239963;
+    border-radius: 50% !important; } }
+
+.side-menu-widget-block {
+  display: none;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  color: white; }
+  .side-menu-widget-block .widget-title {
+    color: white; }
+  @media (max-width: 1239px) {
+    .side-menu-widget-block {
+      padding-bottom: 2rem; } }
+
+#menu {
+  background-color: gray !important; }
+  #menu span {
+    color: white !important; }
+
+#Action_bar .social li a {
+  color: white !important; }
+
+/**
+ *
+ * Top Video Block on the Front Page
+ *
+ */
+#front-page-video-block .front-page-header-block {
+  min-height: 1080px;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-color: rgba(38, 38, 38, 0.7); }
+  @media (min-width: 768px) and (max-width: 1239px) {
+    #front-page-video-block .front-page-header-block {
+      padding-top: 10rem; } }
+  #front-page-video-block .front-page-header-block h1 {
+    padding-top: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #eeeeee;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-style: italic;
+    font-weight: 700; }
+    @media (max-width: 650px) {
+      #front-page-video-block .front-page-header-block h1 {
+        font-size: 2.5rem; } }
+  #front-page-video-block .front-page-header-block div.call-now {
+    margin: 0 auto; }
+    #front-page-video-block .front-page-header-block div.call-now h2 {
+      font-family: 'Courgette', cursive;
+      padding: 1rem;
+      padding-top: 10rem;
+      color: #9a9a9a;
+      font-size: 2.5rem;
+      line-height: 2.5rem; }
+  #front-page-video-block .front-page-header-block .logo-img img {
+    background-color: rgba(255, 255, 255, 0.7); }
+
+/**
+ *
+ * Section 2 
+ *
+ */
+#section2 {
+  color: gray; }
+  #section2 h1 {
+    font-family: 'Courgette', cursive;
+    color: gray; }
+
+/**
+ *
+ * Section 3
+ *
+ */
+#section3 h2 {
+  font-family: 'Courgette', cursive;
+  color: gray; }
+#section3 h4 {
+  font-family: 'Courgette', cursive;
+  color: gray;
+  font-size: 1.5rem; }
+
+/**
+ *
+ * Section 4
+ *
+ */
+#section4 .section4-wrapper {
+  background-color: rgba(128, 128, 128, 0.7);
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+#section4 h1 {
+  font-family: 'Courgette', cursive;
+  color: silver;
+  font-size: 3.5rem;
+  vertical-align: center;
+  text-align: center;
+  padding: 3rem;
+  line-height: 3.5rem; }
+
+/**
+ *
+ * The Front Page Offer Slider which is auto
+ *
+ */
+.offer_thumb {
+  background: url("/wp-content/uploads/2016/04/header-transparent-bg.png");
+  min-height: 500px !important; }
+  .offer_thumb .offer_thumb_ul .desc_wrapper {
+    padding-top: 6rem !important; }
+    @media screen and (min-width: 1500px) {
+      .offer_thumb .offer_thumb_ul .desc_wrapper {
+        padding-top: 5rem !important; }
+        .offer_thumb .offer_thumb_ul .desc_wrapper h5 {
+          font-size: 1.5rem !important;
+          line-height: 1.5rem !important;
+          font-weight: 300 !important;
+          color: gray; } }
+
+/**
+ *
+ * Page Details
+ *
+ */
+#pager-header-block {
+  min-height: 600px; }
+  #pager-header-block .page-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 600px;
+    width: 100%; }
+    @media (min-width: 768px) and (max-width: 1239px) {
+      #pager-header-block .page-header {
+        padding-top: 10rem; } }
+    #pager-header-block .page-header h1 {
+      color: white !important; }
+    #pager-header-block .page-header .slogan {
+      padding-top: 8rem;
+      color: white !important; }
+
+/**
+ *
+ * Footer Widget
+ *
+ */
+#text-2 .textwidget img {
+  width: 100%; }
+
+#menu-footer-menu {
+  background-color: #333333;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+/*# sourceMappingURL=style.css.map */
